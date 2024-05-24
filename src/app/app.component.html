@@ -1,0 +1,46 @@
+<div class="container">
+  <h1 class="title">Menu do dia</h1>
+  <canvas *ngIf="menuReady" width="1130" height="1600" style="border:1px solid #000000;" src="src\assets\imgs\card.jpg" id="canvas">
+    <p>Canvas is not supported in your browser</p>
+  </canvas>
+<div>
+  <div class="row">
+    <div class="col-md-4">
+      <h2 class="tabTitle">Guarnições:</h2>
+      <ul>
+        <div>
+          <input [(ngModel)]="guarn1" type="text">
+          <p><img src="'./assets/imgs/fechar.png'" alt=""></p>
+        </div>
+        <input [(ngModel)]="guarn2" type="text">
+        <input [(ngModel)]="guarn3" type="text">
+        <input [(ngModel)]="guarn4" type="text">
+        <input [(ngModel)]="guarn5" type="text">
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h2 class="tabTitle">Proteinas</h2>
+      <ul>
+        <input [(ngModel)]="protein1" type="text">
+          <input [(ngModel)]="protein2" type="text">
+          <input [(ngModel)]="protein3" type="text">
+          <input [(ngModel)]="protein4" type="text">
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h2 class="tabTitle">Ensaladas</h2>
+      <ul>
+        <input [(ngModel)]="salad1" type="text">
+        <input [(ngModel)]="salad2" type="text">
+        <input [(ngModel)]="salad3" type="text">
+        <input [(ngModel)]="salad4" type="text">
+      </ul>
+    </div>
+  </div>
+  
+</div>
+
+
+
+<button (click)="makeMenu()">Criar</button>
+</div>
